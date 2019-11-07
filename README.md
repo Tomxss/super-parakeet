@@ -1,4 +1,4 @@
-# <a href=""><img src="https://i1.wp.com/allbursaries.co.za/wp-content/uploads/2017/11/WeThinkCode-South-Africa.gif?fit=200%2C200&ssl=1" height="60"></a> 1st Year At WeThinkCode_ 2019
+# <a href=""><img src="https://i1.wp.com/allbursaries.co.za/wp-content/uploads/2017/11/WeThinkCode-South-Africa.gif?fit=200%2C200&ssl=1" height="60"></a> Student At WeThinkCode_ 2019
 
 ## Learn Github
 I am learning how to use Github MORE efficiently!
