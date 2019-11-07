@@ -1,0 +1,62 @@
+
+How to Install Git on Mac and Generate SSH Keys
+Amir
+Amir 
+Last updated: Jul 2, 2019|2 mins read
+How to Install Git on Mac and Generate SSH Keys
+In this step-by-step Git Tutorial, we will go through how to install Git on a Mac machine, how to generate SSH keys and upload your public SSH key to your GitHub account for authorization.
+
+How to Install Git on Mac
+Open a terminal and type
+
+1
+$ brew install git
+This will install Git on your system. To confirm the installation, type
+
+1
+$ git --version
+This will print the version of Git installed on your machine.
+
+How to generate SSH key for GitHub authorization
+Open a terminal
+Go to your home directory by typing cd ~/
+Type the following command ssh-keygen -t rsa
+
+This will prompt you to enter a filename to store the key
+Just press enter to accept the default filename (/Users/you/.ssh/id_rsa)
+Then it will ask you to create a passphrase. This is optional, either create a passphrase or press enter for no passphrase
+When you press enter, two files will be created
+~/.ssh/id_rsa
+~/.ssh/id_rsa.pub
+Your public key is stored in the file ending with .pub, i.e. ~/.ssh/id_rsa.pub
+How to access and copy public SSH key
+In order to authenticate yourself and your device with GitHub, you need to upload your public SSH key which you generated above to your GitHub account.
+
+Copy public SSH key
+
+Open a terminal and type
+
+1
+$ pbcopy < ~/.ssh/id_rsa.pub
+This will copy the contents of the id_rsa.pub file to your clipboard.
+
+How to upload your public SSH key to GitHub
+Once you have copied your public SSH key, login to your GitHub account and go to
+https://github.com/settings/profile
+On the left-hand side menu, you will see a link “SSH and GPG keys”
+Click on that link which will take you to a page where you can enter your public SSH key that you copied earlier.
+Click the button which says ‘New SSH key’
+Then enter a title name - can be anything, e.g. newMac
+Paste the public SSH key in the key textbox
+Click “Add SSH key”
+Test your GitHub authorization:
+
+Open a terminal and type
+
+1
+$ git clone git@github.com:AmirGhahrai/Rima.git
+It will ask you if you want to continue to connect, type yes
+If you created a passphrase when you were generating the public key, then it will ask you to enter it.
+Enter your passphrase and press enter.
+It will then start to clone the project to your directory.
+You are all now set up to use Git and GitHub.
