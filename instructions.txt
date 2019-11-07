@@ -8,7 +8,7 @@ In this step-by-step Git Tutorial, we will go through how to install Git on a Ma
 
 How to Install Git on Mac
 Open a terminal and type
-
+lol
 1
 $ brew install git
 This will install Git on your system. To confirm the installation, type
